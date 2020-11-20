@@ -5,7 +5,7 @@ function sendmail (options) {
 	    service: "SendGrid",
 	    auth: {
 	      user: process.env.SENDGRID_USER, // generated ethereal user
-	      pass: process.env.SENDGRID_PASSWORD, // generated ethereal password
+	      pass: process.env.SENDGRID_API, // generated ethereal password
 	    }
 	 });
 	transporter.sendMail(options).then( () => {
